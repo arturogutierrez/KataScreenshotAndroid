@@ -21,15 +21,15 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import butterknife.BindView;
 import com.karumi.screenshot.R;
 import com.karumi.screenshot.ui.presenter.Presenter;
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public abstract class BaseActivity extends AppCompatActivity implements Presenter.View {
 
-  @Nullable @Bind(R.id.toolbar) Toolbar toolbar;
-  @Nullable @Bind(R.id.progress_bar) View loadingView;
+  @Nullable @BindView(R.id.toolbar) Toolbar toolbar;
+  @Nullable @BindView(R.id.progress_bar) View loadingView;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

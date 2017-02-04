@@ -20,7 +20,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.karumi.screenshot.R;
 import com.karumi.screenshot.model.SuperHero;
@@ -30,9 +30,9 @@ import com.squareup.picasso.Picasso;
 public class SuperHeroViewHolder extends RecyclerView.ViewHolder {
 
   private final SuperHeroesPresenter presenter;
-  @Bind(R.id.iv_super_hero_photo) ImageView photoImageView;
-  @Bind(R.id.tv_super_hero_name) TextView nameTextView;
-  @Bind(R.id.iv_avengers_badge) View avengersBadgeView;
+  @BindView(R.id.iv_super_hero_photo) ImageView photoImageView;
+  @BindView(R.id.tv_super_hero_name) TextView nameTextView;
+  @BindView(R.id.iv_avengers_badge) View avengersBadgeView;
 
   public SuperHeroViewHolder(View itemView, SuperHeroesPresenter presenter) {
     super(itemView);
